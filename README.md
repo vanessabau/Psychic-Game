@@ -14,9 +14,9 @@ I chose to first focus on game functionality. Once the game is working exactly h
 Most of the game I was able to adjust to reflect the needed parameters. The elements that are proving challenging are below.
 
 CHALLENGES
-* I am having trouble resetting the guesses after the user guesses incorrectly 9 times.
-* I am also having trouble displaying all 9 of the user's guesses. Right now I can only display one user guess at a time.
-* I will be asking my tutor for help on these two facets.
+* I had trouble resetting the guesses after the user guesses incorrectly 9 times. My tutor helped me update my if/else statement to check before running if the user has guesses left. By starting with this checking method if there were guesses left it ran through the comparison - if there were no guesses left the resetGuesses function is called.
+* I also had trouble displaying all 9 of the user's guesses. My tutor helped me create an adiitional variable updatingUserGuess and add it to my userGuess variable so with a += and again with a " ," to display all the user gueses with spaces and commas. This was also added to my resetGuesses function so that the list of user guesses resets with the game.
+* We (the tutor and I) used information from stack overflow to help see how to add characters to a string to display ther user guesses.
 
 
 Reference to Rock Paper Scissors game activity: (https://vanessabau.github.io/RPS-game/023-rpsgame-Activity)
@@ -24,5 +24,7 @@ Reference to Rock Paper Scissors game activity: (https://vanessabau.github.io/RP
 Help with building an array of the letters of the alphabet: (http://actionsnippet.com/?p=13)
 
 Help with Resetting score to zero: (https://stackoverflow.com/questions/50849061/how-do-i-get-the-your-guesses-section-to-reset-after-either-a-win-or-until-the)
+
+Resource for adding letters to a string: (https://stackoverflow.com/questions/5754712/add-characters-to-a-string-in-javascript)
 
 Read.me guidance: (https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
