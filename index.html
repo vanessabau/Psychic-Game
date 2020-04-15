@@ -23,7 +23,7 @@
         var wins = 0;
         var losses = 0;
         var guesses = 0;
-        var guessesLeft = 5;
+        var guessesLeft = 9;
 
         //Create an event to compare computer and user guesses
         document.onkeyup = function(){
@@ -32,29 +32,34 @@
 
             var computerGuess = alphabetArray[Math.floor(Math.random()*alphabetArray.length)];
 
+            var resetGuesses = function(){
+                guessesLeft = 9;
+            }
+
             if (userGuess !== computerGuess){
-                console.log("you loose");
+                console.log("Your guess: " + userGuess + " you loose");
                 console.log(losses++);
                 console.log(guesses++) 
                 console.log(guessesLeft--)
             }
+            //else if(guessesLeft==0){
+            //   resetGuesses();}
             else{
-                console.log("you win");
+                console.log("Your guess: " + userGuess + " you win");
                 console.log(wins++);
                 console.log(guesses++);
                 console.log(guessesLeft--);
+                resetGuesses();
             }
 
             //Create html variable to display results to viewer
             var html = "<p><h1>Guess what letter I am thinking of</h1> Press a letter key to play!</p>" + 
             "<p> WINS: "+ wins +"</p>" +
             "<p> LOSSES: "+ losses +"</p>" +
-            "<p> GUESSES: "+ guesses +"</p>" +
+            "<p> YOUR GUESS: "+ userGuess +"</p>" +
             "<p> GUESSES LEFT: "+ guessesLeft +"</p>";
             document.querySelector('#game').innerHTML = html;
         }
-
-    
 
     </script>
 </body>
