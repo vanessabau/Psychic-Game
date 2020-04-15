@@ -12,7 +12,7 @@
     3. The choices are compared, and the wins, losses, guesses, guesses-so-far values update-->
 
     <div id = "game">
-        Guess what letter I'm thinking of
+        <h1>Guess what letter I'm thinking of</h1> Press a letter key to play!
     </div>
     <script>
 
@@ -41,10 +41,17 @@
             else{
                 console.log("you win");
                 console.log(wins++);
-                console.log(guess++);
+                console.log(guesses++);
                 console.log(guessesLeft--);
             }
 
+            //Create html variable to display results to viewer
+            var html = "<p><h1>Guess what letter I am thinking of</h1> Press a letter key to play!</p>" + 
+            "<p> WINS: "+ wins +"</p>" +
+            "<p> LOSSES: "+ losses +"</p>" +
+            "<p> GUESSES: "+ guesses +"</p>" +
+            "<p> GUESSES LEFT: "+ guessesLeft +"</p>";
+            document.querySelector('#game').innerHTML = html;
         }
 
     
