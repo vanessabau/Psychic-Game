@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+}
+
+/*Create a border around the game area*/
+div{
+    border: 5px lightslategray solid;
+}
+
+/* Format the main conent that contains the game*/
+#game{
+    margin: 50px;
+    line-height: 36px;
+    font-size: 20px;
+    letter-spacing: .04em;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 675px;
+    background-color: rgb(223, 230, 238);
+}
+
+/* Formatting for the header, including a drop shadow for the text */
+h1{
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 36px;
+    text-shadow: 2px 2px lightcyan;
+    background-color: lightsteelblue;
+    padding: 15px;
+    border-bottom: 3px lightcyan solid;
+}
