@@ -3,25 +3,49 @@
     box-sizing: border-box;
 }
 
-/*Create a border around the game area*/
-div{
-    border: 5px lightslategray solid;
+/*Styling for main elements of game, including resizing, coloring, 
+adding borders, margins, padding and formatting sections. New items that I learned 
+and gained practice on were overflow:auto, display:flex, creating divs to hold and 
+position elements,and making sure that everything looked ok at various sizes.*/
+
+body{
+    background-color: rgb(217, 226, 235);
 }
 
-/* Format the main conent that contains the game*/
+nav{
+    background: rgb(109, 173, 211);
+    padding: 20px;
+    border-bottom: 5px lightcyan solid;
+    width: 890px;
+    color: rgb(237, 245, 253);
+    font-size: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    border: 5px rgb(109, 173, 211) solid;
+}
+
 #game{
-    margin: 50px;
+    margin: 30px;
     line-height: 36px;
     font-size: 20px;
     letter-spacing: .04em;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 675px;
-    background-color: rgb(223, 230, 238);
+    background-color: rgb(237, 245, 253);
 }
 
-/* Formatting for the header, including a drop shadow for the text */
-h1{
+h2{
     font-weight: bold;
     letter-spacing: .1em;
     font-size: 36px;
@@ -30,3 +54,31 @@ h1{
     padding: 15px;
     border-bottom: 3px lightcyan solid;
 }
+
+#footerWrap {
+    width:100%;
+    position:fixed;
+    bottom: 0px;
+    background-color: rgb(217, 226, 235);
+    border:0;
+}
+
+footer {
+    margin: auto;
+    width: 890px;
+    height: 40px;
+    text-align: center;
+    color: rgb(109, 173, 211);
+     
+}
+#footerContent{
+    float:left;
+    width: 890px;
+    height: 50px;
+    background-color:rgb(109, 173, 211);
+    padding:0;
+    border-top: 5px lightcyan solid;
+}
+
+
+    

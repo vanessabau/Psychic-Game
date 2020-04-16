@@ -9,7 +9,7 @@ I referenced a Rock Paper Sciccors "rps" game we built as a class project for st
 
 One of the first things that was fun to learn was how to create an array of all the letters of the alphabet without typing each letter out "a", - I was happy to find there was a way to do this with one string on code (reference below).
 
-I chose to first focus on game functionality. Once the game is working exactly how I want, I will add a style sheet. 
+I chose to first focus on game functionality. I built everything in html first, then styled in css, finally I cut and pasted the script into a .js file to create the javascript.
 
 Most of the game I was able to adjust to reflect the needed parameters. The elements that are proving challenging are below.
 
